@@ -1,7 +1,7 @@
 <div class="row">
   <div class="col-md-12">
     <h2>购物车</h2>
-    
+    <%= link_to("清空购物车", clean_carts_path, method: :delete, data: {confirm: "你确定要清空购物车吗？"}, class: "pull-right") %>
     <table class="table table-bordered">
       <thead>
         <tr>
@@ -32,7 +32,7 @@
       </tbody>
     </table>
     <span class="pull-right">
-      总计 RMB
+      总计<%= render_cart_total_price %> RMB
     </span>
     <br><br>
     <%= link_to("确认结账", "#", class: "btn btn-lg btn-danger pull-right") %>

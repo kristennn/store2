@@ -8,7 +8,6 @@ class CartItemsController < ApplicationController
     @cart_item.destroy
     flash[:alert] = "成功将#{@product.title}从购物车移除"
     redirect_to carts_path
-
   end
 
 end
