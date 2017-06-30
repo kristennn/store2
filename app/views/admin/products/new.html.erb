@@ -6,6 +6,7 @@
       <%= f.input :description, input_html: {class: "form-control"} %>
       <%= f.input :quantity, input_html: {class: "form-control"} %>
       <%= f.input :price, input_html: {class: "form-control"} %>
+      <%= f.input :image, as: :file %>
       <%= f.submit "Submit", class: "btn btn-primary" %>
     <% end %>
   </div>
